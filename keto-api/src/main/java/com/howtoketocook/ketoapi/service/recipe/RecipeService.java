@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.howtoketocook.ketoapi.enums.IngredientUnit;
+import com.howtoketocook.ketoapi.model.Image;
 import com.howtoketocook.ketoapi.model.Ingredient;
 import com.howtoketocook.ketoapi.model.Recipe;
 
@@ -22,14 +23,23 @@ public class RecipeService {
 	private void init() {
 		recipes = new ArrayList<Recipe>();
 		Recipe recipe = Recipe.builder()
+				.id(1)
 				.name("Boiled Egg")
 				.cookingTime(15)
 				.prepTime(5)
 				.portions(1)
 				.ingredients(boiledEggIngredients())
 				.instructions("test")
+				.image(boiledEggImage())
 				.build();
 		recipes.add(recipe);
+	}
+
+	private Image boiledEggImage() {
+		return Image.builder()
+				.id(1)
+				.url("https://as1.ftcdn.net/jpg/02/05/95/12/500_F_205951292_Grw3fa2P4h7oCDgrXJJVkzIhzHHRj60q.jpg")
+				.build();
 	}
 	
 	private List<Ingredient> boiledEggIngredients() {
@@ -45,6 +55,7 @@ public class RecipeService {
 
 
 	public List<Recipe> getAll() {
+		System.out.println("Returning eggs");
 		return recipes;
 	}
 	

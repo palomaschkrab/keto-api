@@ -8,11 +8,13 @@ import lombok.Getter;
 @Builder
 @Getter
 public class Recipe {
+	private long id;
 	private String name;
 	private long cookingTime;
 	private long prepTime;
 	private int portions;
 	private List<Ingredient> ingredients;
 	private String instructions;
+	private Image image;
 	
 }
