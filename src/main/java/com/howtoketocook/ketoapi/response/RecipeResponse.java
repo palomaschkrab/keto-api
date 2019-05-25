@@ -19,6 +19,7 @@ public class RecipeResponse {
 	private String instructions;
 	private String imageUrl;
 	private MacroNutrients macronutrients;
+	private String additionalInfo;
 	
 	public RecipeResponse(Recipe recipe) {
 		id = recipe.getId();
@@ -30,5 +31,6 @@ public class RecipeResponse {
 		instructions = recipe.getInstructions();
 		imageUrl = recipe.getImage().getUrl();
 		macronutrients = recipe.getMacronutrients();
+		additionalInfo = recipe.getAdditionalInfo();
 	}
 }

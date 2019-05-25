@@ -17,4 +17,5 @@ public class Recipe {
 	private String instructions;
 	private Image image;
 	private MacroNutrients macronutrients;
+	private String additionalInfo;
 }

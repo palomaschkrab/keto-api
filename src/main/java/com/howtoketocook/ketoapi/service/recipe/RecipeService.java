@@ -32,7 +32,8 @@ public class RecipeService {
 				.ingredients(boiledEggIngredients())
 				.instructions("test")
 				.image(boiledEggImage())
-				.macronutrients(boiledEggsMacronutrients());
+				.macronutrients(boiledEggsMacronutrients())
+				.additionalInfo("Family's traditional recipe");				
 		
 		for(int i = 0; i <= 50; i++) {
 			recipe.id(i);
