@@ -9,5 +9,6 @@ public enum IngredientUnit {
 	CUP,
 	DROP,
 	PINCH,
-	UNIT
+	UNIT,
+	LITERS
 }

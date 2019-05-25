@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import com.howtoketocook.ketoapi.enums.IngredientUnit;
 import com.howtoketocook.ketoapi.model.Image;
 import com.howtoketocook.ketoapi.model.Ingredient;
+import com.howtoketocook.ketoapi.model.MacroNutrients;
 import com.howtoketocook.ketoapi.model.Recipe;
+import com.howtoketocook.ketoapi.model.Recipe.RecipeBuilder;
 
 @Service
 public class RecipeService {
@@ -22,8 +24,7 @@ public class RecipeService {
 	//to replace database at the beginning
 	private void init() {
 		recipes = new ArrayList<Recipe>();
-		Recipe recipe = Recipe.builder()
-				.id(1)
+		RecipeBuilder recipe = Recipe.builder()
 				.name("Boiled Egg")
 				.cookingTime(15)
 				.prepTime(5)
@@ -31,8 +32,14 @@ public class RecipeService {
 				.ingredients(boiledEggIngredients())
 				.instructions("test")
 				.image(boiledEggImage())
-				.build();
-		recipes.add(recipe);
+				.macronutrients(boiledEggsMacronutrients());
+		
+		for(int i = 0; i <= 50; i++) {
+			recipe.id(i);
+			recipes.add(recipe.build());
+		}
+		
+		
 	}
 
 	private Image boiledEggImage() {
@@ -48,15 +55,34 @@ public class RecipeService {
 				.quantity(3)
 				.unit(IngredientUnit.UNIT)
 				.build();
+		Ingredient water = Ingredient.builder()
+				.name("water")
+				.quantity(0.5)
+				.unit(IngredientUnit.LITERS)
+				.build();
 		List<Ingredient> ingredients = new ArrayList<Ingredient>();
 		ingredients.add(egg);		
+		ingredients.add(water);
 		return ingredients;
 	}
-
+	private MacroNutrients boiledEggsMacronutrients() {
+		return MacroNutrients.builder()
+				.carbs(1.8)
+				.fat(15)
+				.protein(18)
+				.build();
+	}
 
 	public List<Recipe> getAll() {
-		System.out.println("Returning eggs");
 		return recipes;
+	}
+	
+	public Recipe getRecipeById(long id) {
+		for(Recipe recipe: recipes) {
+			if(recipe.getId() == id)
+				return recipe;
+		}
+		return null;
 	}
 	
 }

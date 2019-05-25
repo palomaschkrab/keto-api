@@ -8,7 +8,7 @@ import lombok.Getter;
 @Builder
 @Getter
 public class Recipe {
-	private long id;
+	private long id;	
 	private String name;
 	private long cookingTime;
 	private long prepTime;
@@ -16,5 +16,5 @@ public class Recipe {
 	private List<Ingredient> ingredients;
 	private String instructions;
 	private Image image;
-	
+	private MacroNutrients macronutrients;
 }

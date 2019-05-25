@@ -9,6 +9,6 @@ import lombok.Getter;
 @Getter
 public class Ingredient {
 	private String name;
-	private int quantity;
+	private double quantity;
 	private IngredientUnit unit;
 }
