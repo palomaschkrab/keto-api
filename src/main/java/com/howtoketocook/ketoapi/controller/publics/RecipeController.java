@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.howtoketocook.ketoapi.converter.RecipeConverter;
-import com.howtoketocook.ketoapi.response.RecipeByIdResponse;
+import com.howtoketocook.ketoapi.response.RecipeResponse;
 import com.howtoketocook.ketoapi.response.RecipeShortInfoResponse;
 import com.howtoketocook.ketoapi.service.recipe.RecipeService;
 
@@ -26,7 +26,7 @@ public class RecipeController {
 	}
 	
 	@GetMapping("/{id}")
-	public RecipeByIdResponse getRecipeById(@PathVariable long id){
+	public RecipeResponse getRecipeById(@PathVariable long id){
 		return RecipeConverter.convertRecipeToDisplayById(recipeService.getRecipeById(id));		
 	}	
 }

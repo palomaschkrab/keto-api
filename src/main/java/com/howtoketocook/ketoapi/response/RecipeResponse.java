@@ -9,7 +9,7 @@ import com.howtoketocook.ketoapi.model.Recipe;
 import lombok.Getter;
 
 @Getter
-public class RecipeByIdResponse {
+public class RecipeResponse {
 	private long id;	
 	private String name;
 	private long cookingTime;
@@ -20,7 +20,7 @@ public class RecipeByIdResponse {
 	private String imageUrl;
 	private MacroNutrients macronutrients;
 	
-	public RecipeByIdResponse(Recipe recipe) {
+	public RecipeResponse(Recipe recipe) {
 		id = recipe.getId();
 		name = recipe.getName();
 		cookingTime = recipe.getCookingTime();

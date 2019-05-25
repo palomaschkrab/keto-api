@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.howtoketocook.ketoapi.model.Recipe;
-import com.howtoketocook.ketoapi.response.RecipeByIdResponse;
+import com.howtoketocook.ketoapi.response.RecipeResponse;
 import com.howtoketocook.ketoapi.response.RecipeShortInfoResponse;
 
 public class RecipeConverter {
@@ -17,7 +17,7 @@ public class RecipeConverter {
 		return recipeShortInfoResponses;
 	}
 	
-	public static RecipeByIdResponse convertRecipeToDisplayById(Recipe recipe) {
-		return new RecipeByIdResponse(recipe);
+	public static RecipeResponse convertRecipeToDisplayById(Recipe recipe) {
+		return new RecipeResponse(recipe);
 	}
 }
