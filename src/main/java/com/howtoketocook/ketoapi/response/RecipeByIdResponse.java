@@ -1,4 +1,4 @@
-package response;
+package com.howtoketocook.ketoapi.response;
 
 import java.util.List;
 

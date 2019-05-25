@@ -8,11 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.howtoketocook.ketoapi.converter.RecipeConverter;
+import com.howtoketocook.ketoapi.response.RecipeByIdResponse;
+import com.howtoketocook.ketoapi.response.RecipeShortInfoResponse;
 import com.howtoketocook.ketoapi.service.recipe.RecipeService;
-
-import converter.RecipeConverter;
-import response.RecipeByIdResponse;
-import response.RecipeShortInfoResponse;
 
 @RestController
 @RequestMapping("/api/public/recipes")
