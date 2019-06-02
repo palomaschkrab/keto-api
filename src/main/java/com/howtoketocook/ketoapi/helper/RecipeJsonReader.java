@@ -13,29 +13,35 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.howtoketocook.ketoapi.enums.IngredientUnit;
 import com.howtoketocook.ketoapi.model.Image;
 import com.howtoketocook.ketoapi.model.Ingredient;
 import com.howtoketocook.ketoapi.model.MacroNutrients;
 import com.howtoketocook.ketoapi.model.Recipe;
-import com.howtoketocook.ketoapi.model.Recipe.RecipeBuilder;
 
 public class RecipeJsonReader {
+	
+	private static Logger logger = LoggerFactory.getLogger(RecipeJsonReader.class);
 	
 	private static List<Recipe> recipes = new ArrayList<Recipe>();
 	
 	public static List<Recipe> getRecipesFromResources() {
-		
+		 logger.debug("Getting Recipes from json files");
+	        
 		if(recipes.isEmpty()) {
 			String folderName = "recipes";
 	        ClassLoader classLoader = RecipeJsonReader.class.getClassLoader();
 	        File recipeFolder = new File(classLoader.getResource(folderName).getFile());
-	
+	        logger.info("Recipe Folder: {}", recipeFolder.getAbsolutePath());
+	        logger.info("Recipe Folder exists: {}", recipeFolder.exists());
+	        logger.info("Recipe Folder isDirectory: {}", recipeFolder.isDirectory());
 	        if(recipeFolder.exists() && recipeFolder.isDirectory()) {
 	        	File[] fileRecipes = recipeFolder.listFiles();
 	        	for(File recipeFile: fileRecipes) {
-	        		System.out.println(recipeFile.getAbsolutePath());
+	        		logger.info("Recipe Path: {}", recipeFile.getAbsolutePath());
 	        		JSONParser parser = new JSONParser();
 	                try (Reader reader = new FileReader(recipeFile)) {
 	                    JSONObject jsonObject = (JSONObject) parser.parse(reader);
@@ -59,6 +65,9 @@ public class RecipeJsonReader {
 	                    e.printStackTrace();
 	                }
 	        	}
+	        }else {
+	        	logger.error("Recipes folder not found.");
+	        	throw new RuntimeException("Recipes folder not found");
 	        }
 		}
         return recipes;
