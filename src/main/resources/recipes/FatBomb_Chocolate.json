@@ -1,0 +1,45 @@
+{
+	"id": 5,
+	"name": "Fat Bomb - Chocolate",
+	"cookingTime": 15,
+	"prepTime": 5,
+	"portions": 6,
+	"ingredients": [
+		{
+			"name": "Coconut oil",
+			"quantity": 0.5,
+			"unit": "CUP"
+		},
+		{
+			"name": "Peanut butter",
+			"quantity": 0.5,
+			"unit": "CUP"
+		},
+		{
+			"name": "Cocoa powder",
+			"quantity": 2.0,
+			"unit": "TABLE_SPOON"
+		},
+		{
+			"name": "Sweetner",
+			"quantity": 3.0,
+			"unit": "TABLE_SPOON"
+		},
+		{
+			"name": "Vanilla extract",
+			"quantity": 0.25,
+			"unit": "TEA_SPOON"
+		}
+	],
+	"instructions": "1)Mix all the ingredients with a hand mixer and distibute it on a ice cube tray\n2) Put it on freezer",
+	"image": {
+		"id": 5,
+		"url": "https://www.drberg.com/uploads/recipes/0Peanut%20Butter%20Chocolate%20Fat%20Bomb1.jpg"
+	},
+	"macronutrients": {
+		"carbs": 0.0,
+		"fat": 0.0,
+		"protein": 0.0
+	},
+	"additionalInfo": "Fat bombs help when you are craving a dessert. This one is my favorite. I got this one from Dr Eric Berg's channel on youtube."
+}

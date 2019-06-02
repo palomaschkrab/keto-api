@@ -1,0 +1,66 @@
+{
+	"id": 3,
+	"name": "Broccoli Salad with bacon",
+	"cookingTime": 5,
+	"prepTime": 10,
+	"portions": 5,
+	"ingredients":[
+		{
+			"name":"Chopped bloccoli",
+			"quantity":8.0,
+			"unit":"CUP"
+		},
+		{
+			"name":"Cheddar (in cubes)",
+			"quantity":6.0,
+			"unit":"OUNCE"
+		},
+		{
+			"name":"Diced red onion",
+			"quantity":0.25,
+			"unit":"CUP"
+		},
+		{
+			"name":"Thinly sliced almonds",
+			"quantity":0.25,
+			"unit":"CUP"
+		},
+		{
+			"name":"Bacon (fried and crambled)",
+			"quantity":8.0,
+			"unit":"SLICE"
+		},
+		{
+			"name":"Mayonnaise",
+			"quantity":0.5,
+			"unit":"CUP"
+		},
+		{
+			"name":"Sour cream",
+			"quantity":0.25,
+			"unit":"CUP"
+		},
+		{
+			"name":"Onion powder",
+			"quantity":2.0,
+			"unit":"TEA_SPOON"
+		},
+		{
+			"name":"Wine vinegar",
+			"quantity":1.0,
+			"unit":"TEA_SPOON"
+		}
+		
+	],
+	"instructions":"1)Add broccoli, cheddar, onion, almonds, and bacon to a large mixing bowl and stir to combine\n2)Add mayo, sour cream, onion powder, and vinegar to a small mixing bowl and stir as well\n3)Pour the dressing over the broccoli mixture and stir well to coat",
+	"image":{
+		"id": 3,
+		"url":"https://cdn.pixabay.com/photo/2016/06/10/08/05/food-1447631_1280.jpg"
+	},
+	"macronutrients":{
+		"carbs":0.0,
+		"fat":0.0,
+		"protein":0.0
+	},
+	"additionalInfo":"Sometimes I just want to eat some salad and this broccoli salad is super easy to make and very tasty."
+}

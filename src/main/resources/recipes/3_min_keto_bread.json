@@ -1,0 +1,40 @@
+{
+	"id": 2,
+	"name": "3-min keto bread",
+	"cookingTime": 2,
+	"prepTime": 1,
+	"portions": 1,
+	"ingredients": [
+		{
+			"name": "Almond flour",
+			"quantity": 3.0,
+			"unit": "TABLE_SPOON"
+		},
+		{
+			"name": "Baking powder",
+			"quantity": 0.5,
+			"unit": "TEA_SPOON"
+		},
+		{
+			"name": "Olive oil",
+			"quantity": 1.5,
+			"unit": "TABLE_SPOON"
+		},
+		{
+			"name": "Egg",
+			"quantity": 1.0,
+			"unit": "UNIT"
+		}
+	],
+	"instructions": "1)Mix almond flour and paking powder in bread size recipient\n2)Add oil and egg\n3)Beat it like you are making an omelette\n4)Microwave on high for 90 seconds\n\nNote: I usually cut the bread and fill it with cheese and turkey and put it on a frying pan",
+	"image": {
+		"id": 2,
+		"url": ""
+	},
+	"macronutrients": {
+		"carbs": 0.0,
+		"fat": 0.0,
+		"protein": 0.0
+	},
+	"additionalInfo": "Best solution for when you are missing a nice bread. It is super fast to make and you can use you favorite filling. I usually do it for breakfast. Yummy!"
+}

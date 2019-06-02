@@ -12,7 +12,7 @@ public class Recipe {
 	private String name;
 	private long cookingTime;
 	private long prepTime;
-	private int portions;
+	private long portions;
 	private List<Ingredient> ingredients;
 	private String instructions;
 	private Image image;

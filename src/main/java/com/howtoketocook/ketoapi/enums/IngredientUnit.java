@@ -3,6 +3,7 @@ package com.howtoketocook.ketoapi.enums;
 public enum IngredientUnit {
 	KILOGRAM,
 	POUND,
+	OUNCE,
 	GRAM,
 	TABLE_SPOON,
 	TEA_SPOON,
@@ -10,5 +11,8 @@ public enum IngredientUnit {
 	DROP,
 	PINCH,
 	UNIT,
-	LITERS
+	LITERS,
+	MILLILITERS,
+	SLICE,
+	NONE
 }

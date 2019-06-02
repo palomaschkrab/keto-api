@@ -1,0 +1,65 @@
+{
+	"id": 4,
+	"name": "Deviled Eggs",
+	"cookingTime": 15,
+	"prepTime": 20,
+	"portions": 12,
+	"ingredients": [
+		{
+			"name": "Eggs",
+			"quantity": 6.0,
+			"unit": "UNIT"
+		},
+		{
+			"name": "Mayonnaise",
+			"quantity": 0.25,
+			"unit": "CUP"
+		},
+		{
+			"name": "White vinegar",
+			"quantity": 1.0,
+			"unit": "TEA_SPOON"
+		},
+		{
+			"name": "Yellow mustard",
+			"quantity": 1.0,
+			"unit": "TEA_SPOON"
+		},
+		{
+			"name": "Salt",
+			"quantity": 0.125,
+			"unit": "TEA_SPOON"
+		},
+		{
+			"name": "Black pepper",
+			"quantity": 0.0,
+			"unit": "NONE"
+		},
+		{
+			"name": "Paprika",
+			"quantity": 0.0,
+			"unit": "NONE"
+		},
+		{
+			"name": "Onion",
+			"quantity": 0.25,
+			"unit": "UNIT"
+		},
+		{
+			"name": "Parsley",
+			"quantity": 0.0,
+			"unit": "NONE"
+		}
+	],
+	"instructions": "1)Boil eggs\n2)Peel eggs and  slice them in a half removing the yolks to a medium bowl, and placing the whites on a serving platter\n3)Mash the yolks using a fork\n4)Add mayonnaise, vinegar, mustard, salt, pepper, onion and parsley\n5)Evenly distrubute the yolk mixture into the egg whites\n6)Sprinkle with paprika and serve",
+	"image": {
+		"id": 4,
+		"url": "https://cdn.pixabay.com/photo/2016/09/14/20/46/home-cooking-1670403_1280.jpg"
+	},
+	"macronutrients": {
+		"carbs": 0.0,
+		"fat": 0.0,
+		"protein": 0.0
+	},
+	"additionalInfo": "Tried this for the first time in a friends house. I have to say I am not a big fan of eggs but this eggs are amazing! This recipe I am posting was actully adapted from foodnetwork.com"
+}

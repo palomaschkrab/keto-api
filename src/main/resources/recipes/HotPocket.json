@@ -1,0 +1,45 @@
+{
+	"id": 6,
+	"name": "Hot Pockets",
+	"cookingTime": 20,
+	"prepTime": 5,
+	"portions": 1,
+	"ingredients": [
+		{
+			"name": "Mozzarela",
+			"quantity": 0.75,
+			"unit": "CUP"
+		},
+		{
+			"name": "Almond flour",
+			"quantity": 0.33,
+			"unit": "CUP"
+		},
+		{
+			"name": "Large scrambled eggs",
+			"quantity": 2.0,
+			"unit": "UNIT"
+		},
+		{
+			"name": "Unsalted butter",
+			"quantity": 2.0,
+			"unit": "TABLE_SPOON"
+		},
+		{
+			"name": "Cooked bacon",
+			"quantity": 3.0,
+			"unit": "SLICE"
+		}
+	],
+	"instructions": "1)Melt mozzarela on microwave and mix it with almond flour\n2)Open the mixture\n3)Fill it with eggs and bacon\n4)Take it to the oven (400F) for 20 minutes\n\nNote: You can also try changing the fillings. I usually do it with cheese and turkey.",
+	"image": {
+		"id": 6,
+		"url": ""
+	},
+	"macronutrients": {
+		"carbs": 0.0,
+		"fat": 0.0,
+		"protein": 0.0
+	},
+	"additionalInfo": "This is perfect for when you want something easy and tasty."
+}
