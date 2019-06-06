@@ -47,11 +47,13 @@ public class RecipeService {
 	@Value("${aws.bucketName}")
 	private String bucketName;
 	
-	private static List<Recipe> recipes = new ArrayList<Recipe>();
+	
 
 	public List<Recipe> getAll() {
 		
-		if(recipes.isEmpty()) {
+		List<Recipe> recipes = new ArrayList<Recipe>();
+		
+		
 			AmazonS3 s3client = getS3Client();
 			
 			ObjectListing objectListing = s3client.listObjects(bucketName);
@@ -86,7 +88,7 @@ public class RecipeService {
 					e1.printStackTrace();
 				}
 			}
-		}
+		
 		return recipes;
 	}
 
