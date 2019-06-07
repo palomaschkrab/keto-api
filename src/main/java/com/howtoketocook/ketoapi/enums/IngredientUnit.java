@@ -11,8 +11,14 @@ public enum IngredientUnit {
 	DROP,
 	PINCH,
 	UNIT,
-	LITERS,
-	MILLILITERS,
+	LITER,
+	MILLILITER,
 	SLICE,
-	NONE
+	CLOVE,
+	NONE;
+	
+	@Override
+    public String toString() {
+        return name().toLowerCase();
+    }
 }

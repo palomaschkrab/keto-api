@@ -42,8 +42,8 @@
 		},
 		{
 			"name": "Onion",
-			"quantity": 0.25,
-			"unit": "UNIT"
+			"quantity": 0,
+			"unit": "NONE"
 		},
 		{
 			"name": "Parsley",
@@ -51,7 +51,7 @@
 			"unit": "NONE"
 		}
 	],
-	"instructions": "1)Boil eggs\n2)Peel eggs and  slice them in a half removing the yolks to a medium bowl, and placing the whites on a serving platter\n3)Mash the yolks using a fork\n4)Add mayonnaise, vinegar, mustard, salt, pepper, onion and parsley\n5)Evenly distrubute the yolk mixture into the egg whites\n6)Sprinkle with paprika and serve",
+	"instructions": "1) Boil eggs\n2) Peel eggs and  slice them in a half removing the yolks to a medium bowl, and placing the whites on a serving platter\n3) Mash the yolks using a fork\n4) Add mayonnaise, vinegar, mustard, salt, pepper, onion and parsley\n5) Evenly distrubute the yolk mixture into the egg whites\n6) Sprinkle with paprika and serve\nNote: Add the ingredients with no predetermined amount as you like.",
 	"image": {
 		"id": 4,
 		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/deviled_eggs.jpg"

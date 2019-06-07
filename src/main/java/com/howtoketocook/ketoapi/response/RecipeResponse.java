@@ -1,5 +1,6 @@
 package com.howtoketocook.ketoapi.response;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.howtoketocook.ketoapi.model.Ingredient;
@@ -15,7 +16,7 @@ public class RecipeResponse {
 	private long cookingTime;
 	private long prepTime;
 	private long portions;
-	private List<Ingredient> ingredients;
+	private List<IngredientResponse> ingredients;
 	private String instructions;
 	private String imageUrl;
 	private MacroNutrients macronutrients;
@@ -27,12 +28,21 @@ public class RecipeResponse {
 		cookingTime = recipe.getCookingTime();
 		prepTime = recipe.getPrepTime();
 		portions = recipe.getPortions();
-		ingredients = recipe.getIngredients();
+		ingredients = getIngredientsResponse(recipe.getIngredients());
 		instructions = recipe.getInstructions();
 		imageUrl = recipe.getImage().getUrl();
 		macronutrients = recipe.getMacronutrients();
 		additionalInfo = recipe.getAdditionalInfo();
 	}
 	
-	
+	public List<IngredientResponse> getIngredientsResponse (List<Ingredient> ingredients){
+		List<IngredientResponse> ingredientsResponse = new ArrayList<>();
+		for(Ingredient ingredient: ingredients) {
+			ingredientsResponse.add(new IngredientResponse(ingredient));
+			System.out.println("****************************************");
+			System.out.println(new IngredientResponse(ingredient));
+			System.out.println("****************************************");
+		}
+		return ingredientsResponse;
+	}
 }

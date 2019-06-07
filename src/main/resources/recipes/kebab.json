@@ -25,6 +25,21 @@
 			"quantity": 0,
 			"unit": "NONE"
 		}
+		{
+			"name": "Soy sauce",
+			"quantity": 0,
+			"unit": "NONE"
+		}
+		{
+			"name": "Garlic",
+			"quantity": 3,
+			"unit": "CLOVE"
+		}
+		{
+			"name": "Salt",
+			"quantity": 0,
+			"unit": "NONE"
+		}
 	],
 	"instructions": "1)Mix almond flour and paking powder in bread size recipient\n2)Add oil and egg\n3)Beat it like you are making an omelette\n4)Microwave on high for 90 seconds\n\nNote: I usually cut the bread and fill it with cheese and turkey and put it on a frying pan",
 	"image": {

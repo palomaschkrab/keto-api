@@ -17,6 +17,7 @@ import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
@@ -34,6 +35,8 @@ import com.howtoketocook.ketoapi.model.Ingredient;
 import com.howtoketocook.ketoapi.model.MacroNutrients;
 import com.howtoketocook.ketoapi.model.Recipe;
 
+import lombok.NonNull;
+
 @Service
 public class RecipeService {
 	private static Logger logger = LoggerFactory.getLogger(RecipeService.class);
@@ -50,53 +53,58 @@ public class RecipeService {
 	
 
 	public List<Recipe> getAll() {
-		
 		List<Recipe> recipes = new ArrayList<Recipe>();
 		
+		AmazonS3 s3client = getS3Client();
 		
-			AmazonS3 s3client = getS3Client();
+		ObjectListing objectListing = s3client.listObjects(bucketName);
+		
+		for(S3ObjectSummary os : objectListing.getObjectSummaries()) {
+			String fileName= os.getKey();
 			
-			ObjectListing objectListing = s3client.listObjects(bucketName);
+			S3Object s3object = s3client.getObject(bucketName, fileName);
 			
-			for(S3ObjectSummary os : objectListing.getObjectSummaries()) {
-				String fileName= os.getKey();
+			BufferedReader reader = new BufferedReader(new InputStreamReader(s3object.getObjectContent()));
+
+			try {
+            	JSONParser parser = new JSONParser();
+				JSONObject jsonObject = (JSONObject) parser.parse(reader);
 				
-				S3Object s3object = s3client.getObject(bucketName, fileName);
-				
-				BufferedReader reader = new BufferedReader(new InputStreamReader(s3object.getObjectContent()));
-	
-				try {
-	            	JSONParser parser = new JSONParser();
-					JSONObject jsonObject = (JSONObject) parser.parse(reader);
-					
-					Recipe recipe = Recipe.builder()
-	        				.id((Long) jsonObject.get("id"))
-	        				.name((String) jsonObject.get("name"))
-	        				.cookingTime((Long) jsonObject.get("cookingTime"))
-	        				.prepTime((Long) jsonObject.get("prepTime"))
-	        				.portions((Long) jsonObject.get("portions"))
-	        				.ingredients(getIngredients((JSONArray) jsonObject.get("ingredients")))
-	        				.instructions((String) jsonObject.get("instructions"))
-	        				.image(getImage((JSONObject) jsonObject.get("image")))
-	        				.macronutrients(getMacroNutrients((JSONObject) jsonObject.get("macronutrients")))
-	        				.additionalInfo((String) jsonObject.get("additionalInfo"))
-	        				.build();
-	                recipes.add(recipe);
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				} catch (ParseException e1) {
-					e1.printStackTrace();
-				}
+				Recipe recipe = Recipe.builder()
+        				.id((Long) jsonObject.get("id"))
+        				.name((String) jsonObject.get("name"))
+        				.cookingTime((Long) jsonObject.get("cookingTime"))
+        				.prepTime((Long) jsonObject.get("prepTime"))
+        				.portions((Long) jsonObject.get("portions"))
+        				.ingredients(getIngredients((JSONArray) jsonObject.get("ingredients")))
+        				.instructions((String) jsonObject.get("instructions"))
+        				.image(getImage((JSONObject) jsonObject.get("image")))
+        				.macronutrients(getMacroNutrients((JSONObject) jsonObject.get("macronutrients")))
+        				.additionalInfo((String) jsonObject.get("additionalInfo"))
+        				.build();
+                recipes.add(recipe);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			} catch (ParseException e1) {
+				e1.printStackTrace();
 			}
+		}
 		
 		return recipes;
 	}
 
 	public Recipe getRecipeById(long id) {	
-		for (Recipe recipe : this.getAll()) {
-			if (recipe.getId() == id)
+		List<Recipe> recipes = getAll();
+		logger.debug("Recipes size: " + recipes.size());
+		
+		for (Recipe recipe : recipes) {
+			logger.debug("Searching for recipe Id: {}", recipe.getId());
+			if (recipe.getId() == id) {
+				logger.debug("Returning recipe with id: " + id);
 				return recipe;
+			}
 		}
+		logger.info("Didn't fine any recipe with id: " + id);
 		return null;
 	}
 

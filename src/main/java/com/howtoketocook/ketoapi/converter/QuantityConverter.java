@@ -4,7 +4,7 @@ public class QuantityConverter {
 	private int numerator;
 	private int denominator;
 	
-	public static String convertToFraction(double quantity) {
+	public static String converQuantitytToFraction(double quantity) {
         String stringNumber = String.valueOf(quantity);
         int numberDigitsDecimals = stringNumber.length() - 1 - stringNumber.indexOf('.');
         int denominator = 1;
@@ -17,6 +17,12 @@ public class QuantityConverter {
        int greatestCommonFactor = greatestCommonFactor(numerator, denominator);
        numerator = numerator / greatestCommonFactor;
        denominator = denominator / greatestCommonFactor;
+       if(denominator == 1) {
+    	   if(numerator ==0) {
+    		   return "";
+    	   }
+    	   return String.valueOf(numerator);
+       }
        return numerator + "/" + denominator;
     }
 
