@@ -1,0 +1,40 @@
+{
+	"id": 8,
+	"name": "Kebab",
+	"cookingTime": 20,
+	"prepTime": 15,
+	"portions": 1,
+	"ingredients": [
+		{
+			"name": "Beef Stew",
+			"quantity": 1.0,
+			"unit": "KILOGRAM"
+		},
+		{
+			"name": "Red Onion",
+			"quantity": 1.0,
+			"unit": "UNIT"
+		},
+		{
+			"name": "Green Pepper",
+			"quantity": 1.0,
+			"unit": "UNIT"
+		},
+		{
+			"name": "Grape tomatoes",
+			"quantity": 0,
+			"unit": "NONE"
+		}
+	],
+	"instructions": "1)Mix almond flour and paking powder in bread size recipient\n2)Add oil and egg\n3)Beat it like you are making an omelette\n4)Microwave on high for 90 seconds\n\nNote: I usually cut the bread and fill it with cheese and turkey and put it on a frying pan",
+	"image": {
+		"id": 8,
+		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/kebab.JPG"
+	},
+	"macronutrients": {
+		"carbs": 0.0,
+		"fat": 0.0,
+		"protein": 0.0
+	},
+	"additionalInfo": "These kebabs are so good! I first made them to go camping. My were going to barbeque but I wanted something different than just meat and burguers. So, I did the kebabs a few days before and kept them on the freezer."
+}

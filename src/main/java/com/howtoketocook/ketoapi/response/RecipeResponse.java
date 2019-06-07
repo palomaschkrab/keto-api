@@ -33,4 +33,6 @@ public class RecipeResponse {
 		macronutrients = recipe.getMacronutrients();
 		additionalInfo = recipe.getAdditionalInfo();
 	}
+	
+	
 }
