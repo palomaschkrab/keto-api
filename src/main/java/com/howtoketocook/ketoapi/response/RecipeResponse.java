@@ -39,9 +39,6 @@ public class RecipeResponse {
 		List<IngredientResponse> ingredientsResponse = new ArrayList<>();
 		for(Ingredient ingredient: ingredients) {
 			ingredientsResponse.add(new IngredientResponse(ingredient));
-			System.out.println("****************************************");
-			System.out.println(new IngredientResponse(ingredient));
-			System.out.println("****************************************");
 		}
 		return ingredientsResponse;
 	}
