@@ -3,26 +3,28 @@ package com.howtoketocook.ketoapi.model;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Entity(name="macro_nutrients")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class MacroNutrients {
+@Entity(name="instructions")
+public class Instruction {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private double carbs;
-	private double fat;
-	private double protein;
-	
+	private Long index;
+	private String step;
+	@ManyToOne(fetch=FetchType.LAZY)
+	private Recipe recipe;
 }

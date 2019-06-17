@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.howtoketocook.ketoapi.model.Ingredient;
+import com.howtoketocook.ketoapi.model.Instruction;
 import com.howtoketocook.ketoapi.model.MacroNutrients;
 import com.howtoketocook.ketoapi.model.Recipe;
+import com.howtoketocook.ketoapi.model.RecipeIngredient;
 
 import lombok.Getter;
 
@@ -17,9 +19,10 @@ public class RecipeResponse {
 	private long prepTime;
 	private long portions;
 	private List<IngredientResponse> ingredients;
-	private String instructions;
+	private List<InstructionResponse> instructions;
+	private String note;
 	private String imageUrl;
-	private MacroNutrients macronutrients;
+	private MacronutrientsResponse macronutrients;
 	private String additionalInfo;
 	
 	public RecipeResponse(Recipe recipe) {
@@ -28,18 +31,27 @@ public class RecipeResponse {
 		cookingTime = recipe.getCookingTime();
 		prepTime = recipe.getPrepTime();
 		portions = recipe.getPortions();
-		ingredients = getIngredientsResponse(recipe.getIngredients());
-		instructions = recipe.getInstructions();
+		ingredients = getIngredientsResponse(recipe.getRecipeIngredients());
+		instructions = getInstructionResponse(recipe.getInstructions());
+		note = recipe.getNote();
 		imageUrl = recipe.getImage().getUrl();
-		macronutrients = recipe.getMacronutrients();
+		macronutrients = new MacronutrientsResponse(recipe.getMacronutrients());
 		additionalInfo = recipe.getAdditionalInfo();
 	}
 	
-	public List<IngredientResponse> getIngredientsResponse (List<Ingredient> ingredients){
+	public List<IngredientResponse> getIngredientsResponse (List<RecipeIngredient> ingredients){
 		List<IngredientResponse> ingredientsResponse = new ArrayList<>();
-		for(Ingredient ingredient: ingredients) {
+		for(RecipeIngredient ingredient: ingredients) {
 			ingredientsResponse.add(new IngredientResponse(ingredient));
 		}
 		return ingredientsResponse;
+	}
+	
+	public List<InstructionResponse> getInstructionResponse(List<Instruction> instructions){
+		List<InstructionResponse> instructionsResponse = new ArrayList<>();
+		for(Instruction instruction: instructions) {
+			instructionsResponse.add(new InstructionResponse(instruction));
+		}
+		return instructionsResponse;
 	}
 }
