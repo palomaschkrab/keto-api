@@ -1,5 +1,9 @@
 package com.howtoketocook.ketoapi.response;
 
+import java.util.List;
+import java.util.Set;
+
+import com.howtoketocook.ketoapi.model.Image;
 import com.howtoketocook.ketoapi.model.Recipe;
 
 import lombok.Getter;
@@ -13,6 +17,9 @@ public class RecipeShortInfoResponse{
 	public RecipeShortInfoResponse(Recipe recipe) {
 		id = recipe.getId();
 		name = recipe.getName();
-		imageUrl = recipe.getImage().getUrl();
+		imageUrl = getFirstImageUrl(recipe.getImages());
+	}
+	public String getFirstImageUrl(Set<Image> images) {
+		return images.iterator().next().getUrl();
 	}
 }

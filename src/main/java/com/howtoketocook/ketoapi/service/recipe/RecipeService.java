@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.howtoketocook.ketoapi.model.Recipe;
+import com.howtoketocook.ketoapi.request.RecipeRequest;
 
 @Service
 public class RecipeService {
@@ -24,4 +25,7 @@ public class RecipeService {
 		return recipeRepository.findById(id).orElseGet(null);
 	}
 
+	public void addRecipe(RecipeRequest recipeRequest) {
+		recipeRepository.save(recipeRequest.toRecipe());
+	}
 }

@@ -2,6 +2,7 @@ package com.howtoketocook.ketoapi.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -31,6 +32,4 @@ public class RecipeIngredient {
 	private double quantity;
 	@Enumerated(EnumType.STRING)
 	private IngredientUnit unit;
-	@ManyToOne
-	private Recipe recipe;
 }

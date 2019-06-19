@@ -25,6 +25,4 @@ public class Instruction {
 	private Long id;
 	private Long index;
 	private String step;
-	@ManyToOne(fetch=FetchType.LAZY)
-	private Recipe recipe;
 }

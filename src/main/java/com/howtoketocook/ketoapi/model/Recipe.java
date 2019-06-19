@@ -1,9 +1,13 @@
 package com.howtoketocook.ketoapi.model;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -28,15 +32,15 @@ public class Recipe {
 	private long cookingTime;
 	private long prepTime;
 	private long portions;
-	@OneToMany(mappedBy="recipe")
-	private List<RecipeIngredient> recipeIngredients;
-	@OneToMany(mappedBy="recipe")
-	private List<Instruction> instructions;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private Set<RecipeIngredient> recipeIngredients;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private Set<Instruction> instructions;
 	@Column(nullable=true)
 	private String note;
-	@OneToOne
-	private Image image;
-	@OneToOne	
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private Set<Image> images;
+	@OneToOne(cascade=CascadeType.ALL)	
 	private MacroNutrients macronutrients;
 	private String additionalInfo;
 	private boolean approved;

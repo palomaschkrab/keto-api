@@ -2,7 +2,9 @@ package com.howtoketocook.ketoapi.response;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import com.howtoketocook.ketoapi.model.Image;
 import com.howtoketocook.ketoapi.model.Ingredient;
 import com.howtoketocook.ketoapi.model.Instruction;
 import com.howtoketocook.ketoapi.model.MacroNutrients;
@@ -34,12 +36,12 @@ public class RecipeResponse {
 		ingredients = getIngredientsResponse(recipe.getRecipeIngredients());
 		instructions = getInstructionResponse(recipe.getInstructions());
 		note = recipe.getNote();
-		imageUrl = recipe.getImage().getUrl();
+		imageUrl = getFirstImageUrl(recipe.getImages());
 		macronutrients = new MacronutrientsResponse(recipe.getMacronutrients());
 		additionalInfo = recipe.getAdditionalInfo();
 	}
 	
-	public List<IngredientResponse> getIngredientsResponse (List<RecipeIngredient> ingredients){
+	public List<IngredientResponse> getIngredientsResponse (Set<RecipeIngredient> ingredients){
 		List<IngredientResponse> ingredientsResponse = new ArrayList<>();
 		for(RecipeIngredient ingredient: ingredients) {
 			ingredientsResponse.add(new IngredientResponse(ingredient));
@@ -47,11 +49,14 @@ public class RecipeResponse {
 		return ingredientsResponse;
 	}
 	
-	public List<InstructionResponse> getInstructionResponse(List<Instruction> instructions){
+	public List<InstructionResponse> getInstructionResponse(Set<Instruction> instructions){
 		List<InstructionResponse> instructionsResponse = new ArrayList<>();
 		for(Instruction instruction: instructions) {
 			instructionsResponse.add(new InstructionResponse(instruction));
 		}
 		return instructionsResponse;
+	}
+	public String getFirstImageUrl(Set<Image> images) {
+		return images.iterator().next().getUrl();
 	}
 }

@@ -46,7 +46,7 @@
 			"unit": "TEA_SPOON"
 		}
 	],
-	"instructions": "1)Microwave the muzzarela and the cream cheese for 1 minute\n2)Add and mix it salt and almond flour\n3)Add and mix the rest of the ingredients\n4)Roll out the dough between two sheets of parchment paper\n5)Poke the dough with a fork\n6)Bake it at 390F for 15 minutes\n7)Remove and flip the crust\n8)Add your favorite toppings\n\nNote: the macronutrients refer to the crust only",
+	"instructions": "1) Microwave the muzzarela and the cream cheese for 1 minute\n2) Add and mix it salt and almond flour\n3) Add and mix the rest of the ingredients\n4) Roll out the dough between two sheets of parchment paper\n5) Poke the dough with a fork\n6) Bake it at 390F for 15 minutes\n7) Remove and flip the crust\n8) Add your favorite toppings\n\nNote 1: the macronutrients refer to the crust only\nNote 2: You can skip the Psyllium rusk if you do not have it but it is good to use because it makes the dough more workable and it is rich in fibers",
 	"image": {
 		"id": 7,
 		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/pizza.jpg"
@@ -56,5 +56,5 @@
 		"fat": 57.0,
 		"protein": 38.0
 	},
-	"additionalInfo": "Missing your pizza?? Try this recipe: It is loved even those who are not in Keto. This recipe was adapted from HeadBangers Kitchen."
+	"additionalInfo": "Missing your pizza?? You gotta try this recipe from HeadBangers Kitchen. It is loved even by those who are not in Keto."
 }
