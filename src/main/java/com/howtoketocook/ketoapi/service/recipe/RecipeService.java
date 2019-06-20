@@ -17,7 +17,7 @@ public class RecipeService {
 	@Autowired
 	private RecipeRepository recipeRepository;
 
-	public List<Recipe> getAll() {
+	public List<Recipe> getAllRecipes() {
 		return recipeRepository.findAll();
 	}
 
@@ -25,7 +25,7 @@ public class RecipeService {
 		return recipeRepository.findById(id).orElseGet(null);
 	}
 
-	public void addRecipe(RecipeRequest recipeRequest) {
-		recipeRepository.save(recipeRequest.toRecipe());
+	public void addRecipe(Recipe recipe) {
+		recipeRepository.save(recipe);
 	}
 }

@@ -1,6 +1,7 @@
 package com.howtoketocook.ketoapi.response;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
@@ -41,19 +42,25 @@ public class RecipeResponse {
 		additionalInfo = recipe.getAdditionalInfo();
 	}
 	
-	public List<IngredientResponse> getIngredientsResponse (Set<RecipeIngredient> ingredients){
+	public List<IngredientResponse> getIngredientsResponse (Set<RecipeIngredient> recipeIngredients){
 		List<IngredientResponse> ingredientsResponse = new ArrayList<>();
-		for(RecipeIngredient ingredient: ingredients) {
-			ingredientsResponse.add(new IngredientResponse(ingredient));
+		List<RecipeIngredient> recipeIngredientsList = new ArrayList<>(recipeIngredients);
+		recipeIngredientsList.sort(Comparator.comparing(RecipeIngredient::getIndex));
+		for(RecipeIngredient recipeIngredient: recipeIngredientsList) {
+			ingredientsResponse.add(new IngredientResponse(recipeIngredient));
 		}
+		
 		return ingredientsResponse;
 	}
 	
 	public List<InstructionResponse> getInstructionResponse(Set<Instruction> instructions){
 		List<InstructionResponse> instructionsResponse = new ArrayList<>();
+
 		for(Instruction instruction: instructions) {
 			instructionsResponse.add(new InstructionResponse(instruction));
 		}
+		
+		instructionsResponse.sort(Comparator.comparing(InstructionResponse::getIndex));
 		return instructionsResponse;
 	}
 	public String getFirstImageUrl(Set<Image> images) {

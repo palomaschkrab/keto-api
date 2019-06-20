@@ -16,7 +16,7 @@ import com.howtoketocook.ketoapi.converter.RecipeConverter;
 import com.howtoketocook.ketoapi.request.RecipeRequest;
 import com.howtoketocook.ketoapi.response.RecipeResponse;
 import com.howtoketocook.ketoapi.response.RecipeShortInfoResponse;
-import com.howtoketocook.ketoapi.service.recipe.RecipeService;
+import com.howtoketocook.ketoapi.service.facade.RecipeFacade;
 
 @RestController
 @RequestMapping("/api/public/recipes")
@@ -25,21 +25,28 @@ public class RecipeController {
 	private static Logger logger = LoggerFactory.getLogger(RecipeController.class);
 	
 	@Autowired
-	private RecipeService recipeService;
+	private RecipeFacade recipeFacade;
 	
 	@GetMapping
 	public List<RecipeShortInfoResponse> getAll(){
-		return RecipeConverter.convertRecipeToShortResponse(recipeService.getAll());
+		return RecipeConverter.convertRecipeToShortResponse(recipeFacade.getAllRecipes());
 	}
 	
 	@GetMapping("/{id}")
 	public RecipeResponse getRecipeById(@PathVariable long id){
 		logger.info("Getting recipe with id: " + id);
-		return RecipeConverter.convertRecipeToDisplayById(recipeService.getRecipeById(id));		
+		return RecipeConverter.convertRecipeToDisplayById(recipeFacade.getRecipeById(id));		
 	}	
 	
-	@PostMapping
-	public void addRecipe(@RequestBody RecipeRequest recipeRequest){
-		recipeService.addRecipe(recipeRequest);
+	
+	public static void main(String[] args) {
+		String string = "e'u qu~ero uma receita com hifen";
+		String s2 = string.replaceAll(" /[^0-9a-zA-Z ]/", "" ).replace( " ", "-" );
+		System.out.println(s2);
 	}
+	
+//	@PostMapping
+//	public void addRecipe(@RequestBody RecipeRequest recipeRequest){
+//		recipeFacade.addRecipe(recipeRequest);
+//	}
 }

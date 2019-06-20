@@ -1,62 +1,129 @@
 {
-	"id": 4,
 	"name": "Deviled Eggs",
 	"cookingTime": 15,
 	"prepTime": 20,
 	"portions": 12,
-	"ingredients": [
+	"recipeIngredientsRequests": [
 		{
-			"name": "Eggs",
+			"ingredientRequest": {
+				"name":"Egg",
+				"amazonUrl": "test"
+			},
 			"quantity": 6.0,
-			"unit": "UNIT"
+			"unit": "UNIT",
+			"index": 1
 		},
 		{
-			"name": "Mayonnaise",
+			"ingredientRequest": {
+				"name":"Mayonnaise",
+				"amazonUrl": "test"
+			},
 			"quantity": 0.25,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 2
 		},
 		{
-			"name": "White vinegar",
+			"ingredientRequest": {
+				"name": "White vinegar",
+				"amazonUrl": "test"
+			},
 			"quantity": 1.0,
-			"unit": "TEA_SPOON"
+			"unit": "TEA_SPOON",
+			"index": 3
 		},
 		{
-			"name": "Yellow mustard",
+			"ingredientRequest": {
+				"name": "Yellow mustard",
+				"amazonUrl": "test"
+			},
 			"quantity": 1.0,
-			"unit": "TEA_SPOON"
+			"unit": "TEA_SPOON",
+			"index": 4
 		},
 		{
-			"name": "Salt",
+			"ingredientRequest": {
+				"name":  "Salt",
+				"amazonUrl": "test"
+			},
 			"quantity": 0.125,
-			"unit": "TEA_SPOON"
+			"unit": "TEA_SPOON",
+			"index": 5
 		},
 		{
-			"name": "Black pepper",
+			"ingredientRequest": {
+				"name": "Black pepper",
+				"amazonUrl": "test"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 6
 		},
 		{
-			"name": "Paprika",
+			"ingredientRequest": {
+				"name":  "Paprika",
+				"amazonUrl": "test"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 7
 		},
 		{
-			"name": "Onion",
+			"ingredientRequest": {
+				"name":  "Onion",
+				"amazonUrl": "test"
+			},
 			"quantity": 0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 8
 		},
 		{
-			"name": "Parsley",
+			"ingredientRequest": {
+				"name": "Parsley",
+				"amazonUrl": "test"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 9
 		}
 	],
-	"instructions": "1) Boil eggs\n2) Peel eggs and  slice them in a half removing the yolks to a medium bowl, and placing the whites on a serving platter\n3) Mash the yolks using a fork\n4) Add mayonnaise, vinegar, mustard, salt, pepper, onion and parsley\n5) Evenly distrubute the yolk mixture into the egg whites\n6) Sprinkle with paprika and serve\nNote: Add the ingredients with no predetermined amount as you like.",
-	"image": {
-		"id": 4,
-		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/deviled_eggs.jpg"
-	},
-	"macronutrients": {
+	"instructionRequests": [
+		{
+			"index":"1",
+			"step":" Boil eggs"
+			
+		},
+		{
+			"index":"2",
+			"step":" Peel eggs and  slice them in a half removing the yolks to a medium bowl, and placing the whites on a serving platter"
+			
+		},
+		{
+			"index":"3",
+			"step":" Mash the yolks using a fork"
+			
+		},
+		{
+			"index":"4",
+			"step":" Add mayonnaise, vinegar, mustard, salt, pepper, onion and parsley"
+			
+		},
+		{
+			"index":"5",
+			"step":" Evenly distrubute the yolk mixture into the egg whites"
+			
+		},
+			{
+			"index":"6",
+			"step":" Sprinkle with paprika and serve"
+			
+		}
+	],
+	"note": "Add the ingredients with no predetermined amount as you like",
+	"imageRequests": [{
+		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/deviled_eggs.jpg",
+		"description": "Deviled Eggs"
+	}],
+	"macronutrientsRequests": {
 		"carbs": 0.0,
 		"fat": 0.0,
 		"protein": 0.0

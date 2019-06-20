@@ -32,4 +32,5 @@ public class RecipeIngredient {
 	private double quantity;
 	@Enumerated(EnumType.STRING)
 	private IngredientUnit unit;
+	private Long index;
 }
