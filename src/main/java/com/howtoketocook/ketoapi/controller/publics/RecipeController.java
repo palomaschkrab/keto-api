@@ -39,14 +39,14 @@ public class RecipeController {
 	}	
 	
 	
-	public static void main(String[] args) {
-		String string = "e'u qu~ero uma receita com hifen";
-		String s2 = string.replaceAll(" /[^0-9a-zA-Z ]/", "" ).replace( " ", "-" );
-		System.out.println(s2);
-	}
-	
-//	@PostMapping
-//	public void addRecipe(@RequestBody RecipeRequest recipeRequest){
-//		recipeFacade.addRecipe(recipeRequest);
+//	public static void main(String[] args) {
+//		String string = "e'u qu~ero uma receita com hifen";
+//		String s2 = string.replaceAll(" /[^0-9a-zA-Z ]/", "" ).replace( " ", "-" );
+//		System.out.println(s2);
 //	}
+	
+	@PostMapping
+	public void addRecipe(@RequestBody RecipeRequest recipeRequest){
+		recipeFacade.addRecipe(recipeRequest);
+	}
 }
