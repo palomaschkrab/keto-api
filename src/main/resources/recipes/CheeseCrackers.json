@@ -1,50 +1,89 @@
 {
-	"id": 9,
 	"name": "Fathead Crackers",
 	"cookingTime": 10,
 	"prepTime": 10,
 	"portions": 8,
-	"ingredients": [
+	"recipeIngredientsRequests": [
 		{
-			"name": "Shredded mozzarella cheese",
+			"ingredientRequest": {
+				"name":"mozzarella"
+			},
 			"quantity": 1.5,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 1
 		},
 		{
-			"name": "Cream cheese",
+			"ingredientRequest": {
+				"name":"Cream cheese"
+			},
 			"quantity": 0.25,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 2
 		},
 		{
-			"name": "Blanched almond flour",
+			"ingredientRequest": {
+				"name":"almond flour"
+			},
 			"quantity": 1.0,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 3
 		},
 		{
-			"name": "Large egg",
+			"ingredientRequest": {
+				"name":"Large egg"
+			},
 			"quantity": 1.0,
-			"unit": "UNIT"
+			"unit": "UNIT",
+			"index": 4
 		},
 		{
-			"name": "Dried parsley",
+			"ingredientRequest": {
+				"name": "dried parsley"
+			},
 			"quantity": 1.0,
-			"unit": "TEA_SPOON"
+			"unit": "TEA_SPOON",
+			"index": 5
 		},
 		{
-			"name": "Pink Himalayan salt",
+			"ingredientRequest": {
+				"name":"Pink Himalayan salt"
+			},
 			"quantity": 0.5,
-			"unit": "TEA_SPOON"
+			"unit": "TEA_SPOON",
+			"index": 6
 		}
 	],
-	"instructions": "1) Preheat oven to 425 F and line a baking sheet with parchment paper\n2) Put the mozzarella and cream cheese in a large microwave-safe mixing bowl and microwave for 30 seconds. Combine using a rubber spatula. Microwave for another 30 seconds, until the cheese has melted, then stir once more.\n3) Add almond flour, egg, parsley and salt, and combine using a fork\n4) Once the dough comes together, transfer it to lined baking sheet and place another piece of parchment paper on top. Roll out into a thin rectangle. Using a pizza cutter or a knife, cut the flattened dough into small crackers, about 1 inch\n5) Bake for 6 to 10 minutes, until crackers have puffed up and browned\n\nNote: The thiner your dough, the crunchier your crackers",
-	"image": {
-		"id": 9,
-		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/FatheadCrackers.JPG"
-	},
-	"macronutrients": {
+	"instructionRequests":[
+		{
+			"index":"1",
+			"step":" Preheat oven to 425 F and line a baking sheet with parchment paper"			
+		},
+		{
+			"index":"2",
+			"step":" Put the mozzarella and cream cheese in a large microwave-safe mixing bowl and microwave for 30 seconds. Combine using a rubber spatula. Microwave for another 30 seconds, until the cheese has melted, then stir once more."			
+		},
+		{
+			"index":"3",
+			"step":" Add almond flour, egg, parsley and salt, and combine using a fork"			
+		},
+		{
+			"index":"4",
+			"step":" Once the dough comes together, transfer it to lined baking sheet and place another piece of parchment paper on top. Roll out into a thin rectangle. Using a pizza cutter or a knife, cut the flattened dough into small crackers, about 1 inch"			
+		},
+		{
+			"index":"5",
+			"step":" Bake for 6 to 10 minutes, until crackers have puffed up and browned"			
+		}
+	],
+	"note": "The thiner your dough, the crunchier your crackers",
+	"imageRequests": [{
+		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/FatheadCrackers.JPG",
+		"description": "Fathead Crackers"
+	}],
+	"macronutrientsRequests": {
 		"carbs": 4.0,
 		"fat": 14.6,
 		"protein": 9.4
 	},
-	"additionalInfo": "A friend gave me a book called by the KetoConnect couple. This crackers were one of the best founds in keto cousine because as they say: we all miss the crunch factor at some point."
+	"additionalInfo": "A friend gave me a book by the KetoConnect couple. This crackers were one of the best founds in keto cousine because as they say: we all miss the crunch factor at some point."
 }

@@ -11,6 +11,7 @@ import lombok.Getter;
 @Getter
 public class RecipeShortInfoResponse{
 	private long id;
+	private String urlId;
 	private String name;
 	private String imageUrl;
 	
@@ -18,6 +19,7 @@ public class RecipeShortInfoResponse{
 		id = recipe.getId();
 		name = recipe.getName();
 		imageUrl = getFirstImageUrl(recipe.getImages());
+		urlId = recipe.getUrlId();
 	}
 	public String getFirstImageUrl(Set<Image> images) {
 		return images.iterator().next().getUrl();

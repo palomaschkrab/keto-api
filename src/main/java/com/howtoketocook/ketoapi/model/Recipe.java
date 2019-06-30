@@ -27,7 +27,8 @@ import lombok.NoArgsConstructor;
 public class Recipe {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;	
+	private long id;
+	private String urlId;
 	private String name;
 	private long cookingTime;
 	private long prepTime;

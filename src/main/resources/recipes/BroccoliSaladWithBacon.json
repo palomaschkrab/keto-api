@@ -1,63 +1,103 @@
 {
-	"id": 3,
 	"name": "Broccoli Salad with bacon",
 	"cookingTime": 5,
 	"prepTime": 10,
 	"portions": 5,
-	"ingredients":[
+	"recipeIngredientsRequests":[
 		{
-			"name":"Chopped broccoli",
+			"ingredientRequest": {
+				"name":"chopped broccoli"
+			},
 			"quantity":8.0,
-			"unit":"CUP"
+			"unit":"CUP",
+			"index": 1
 		},
 		{
-			"name":"Cheddar (in cubes)",
+			"ingredientRequest": {
+				"name":"cheddar (in cubes)"
+			},
 			"quantity":6.0,
-			"unit":"OUNCE"
+			"unit":"OUNCE",
+			"index": 2
 		},
 		{
-			"name":"Diced red onion",
+			"ingredientRequest": {
+				"name":"diced red onion"
+			},
 			"quantity":0.25,
-			"unit":"CUP"
+			"unit":"CUP",
+			"index": 3
 		},
 		{
-			"name":"Thinly sliced almonds",
+			"ingredientRequest": {
+				"name":"thinly sliced almonds"
+			},
 			"quantity":0.25,
-			"unit":"CUP"
+			"unit":"CUP",
+			"index": 4
 		},
 		{
-			"name":"Bacon (fried and crambled)",
+			"ingredientRequest": {
+				"name":"bacon (fried and crambled)"
+			},
 			"quantity":8.0,
-			"unit":"SLICE"
+			"unit":"SLICE",
+			"index": 5
 		},
 		{
-			"name":"Mayonnaise",
+			"ingredientRequest": {
+				"name":"mayonnaise"
+			},
 			"quantity":0.5,
-			"unit":"CUP"
+			"unit":"CUP",
+			"index": 6
 		},
 		{
-			"name":"Sour cream",
+			"ingredientRequest": {
+				"name":"sour cream"
+			},
 			"quantity":0.25,
-			"unit":"CUP"
+			"unit":"CUP",
+			"index": 7
 		},
 		{
-			"name":"Onion powder",
+			"ingredientRequest": {
+				"name":"onion powder"
+			},
 			"quantity":2.0,
-			"unit":"TEA_SPOON"
+			"unit":"TEA_SPOON",
+			"index": 8
 		},
 		{
-			"name":"Wine vinegar",
+			"ingredientRequest": {
+				"name":"Wine vinegar"
+			},
 			"quantity":1.0,
-			"unit":"TEA_SPOON"
+			"unit":"TEA_SPOON",
+			"index": 9
 		}
 		
 	],
-	"instructions":"1)Add the chopped broccoli, cheddar, onion, almonds, and bacon to a large mixing bowl and stir to combine\n2)Add mayo, sour cream, onion powder, and vinegar to a small mixing bowl and stir as well\n3)Pour the dressing over the broccoli mixture and stir well to coat",
-	"image":{
-		"id": 3,
-		"url":"https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/broccoli_salad.jpg"
-	},
-	"macronutrients":{
+	"instructionRequests":[
+		{
+			"index":"1",
+			"step":" Add the chopped broccoli, cheddar, onion, almonds, and bacon to a large mixing bowl and stir to combine"			
+		},
+		{
+			"index":"2",
+			"step":" Add mayo, sour cream, onion powder, and vinegar to a small mixing bowl and stir as well"			
+		},
+		{
+			"index":"3",
+			"step":" Pour the dressing over the broccoli mixture and stir well to coat"			
+		}
+	],
+	"imageRequests":[{
+		"url":"https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/broccoli_salad.jpg",
+		"description": "Broccoli Salad with bacon"
+	}
+	],
+	"macronutrientsRequests":{
 		"carbs":0.0,
 		"fat":0.0,
 		"protein":0.0

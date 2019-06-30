@@ -1,52 +1,91 @@
 {
-	"id": 8,
-	"name": "Kebab",
+	"name": "Beef Kebab",
 	"cookingTime": 20,
 	"prepTime": 15,
 	"portions": 6,
-	"ingredients": [
+	"recipeIngredientsRequests": [
 		{
-			"name": "Beef Stew or beef of preference in cubes",
+			"ingredientRequest": {
+				"name":"Beef Stew"
+			},
 			"quantity": 1.0,
-			"unit": "KILOGRAM"
+			"unit": "KILOGRAM",
+			"index": 1
 		},
 		{
-			"name": "Red Onion",
+			"ingredientRequest": {
+				"name":"red onion"
+			},
 			"quantity": 1.0,
-			"unit": "UNIT"
+			"unit": "UNIT",
+			"index": 2
 		},
 		{
-			"name": "Green Pepper",
+			"ingredientRequest": {
+				"name":"green pepper"
+			},
 			"quantity": 1.0,
-			"unit": "UNIT"
+			"unit": "UNIT",
+			"index": 3
 		},
 		{
-			"name": "Grape tomatoes",
+			"ingredientRequest": {
+				"name":"grape tomatoes"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 4
 		},
 		{
-			"name": "Soy sauce",
+			"ingredientRequest": {
+				"name":"soy sauce"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 5
 		},
 		{
-			"name": "Minced garlic",
+			"ingredientRequest": {
+				"name":"garlic"
+			},
 			"quantity": 3.0,
-			"unit": "CLOVE"
+			"unit": "CLOVE",
+			"index": 6
 		},
 		{
-			"name": "Salt",
+			"ingredientRequest": {
+				"name":"salt"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 7
+		}		
+	],
+	"instructionRequests": [
+		{
+			"index":"1",
+			"step":" Mix the meat with soy sauce, minced garlic and salt"			
+		},
+		{
+			"index":"2",
+			"step":" Cut onion and green pepper in 1-inch squares"			
+		},
+		{
+			"index":"3",
+			"step":" Arrange meat, onion, green pepper and grape tomatoes onto the skewers"			
+		},
+		{
+			"index":"4",
+			"step":" Take it to the barbecue grill for 20 min (10 each side) or until meat is as you like"			
 		}
 	],
-	"instructions": "1) Mix the meat with soy sauce, garlic and salt\n2) Cut onion and green pepper in 1-inch squares\n3) Arrange meat, onion, green pepper and grape tomatoes onto the skewers\n4) Take it to the barbecue grill for 20 min (10 each side) or until meat is as you like",
-	"image": {
-		"id": 8,
-		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/kebab.JPG"
-	},
-	"macronutrients": {
+	"note": "You can use your beef of preference in cubes",
+	"imageRequests": [{
+		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/kebab.JPG",
+		"description": "Beef kebab"
+	}
+	],
+	"macronutrientsRequests": {
 		"carbs": 0.0,
 		"fat": 0.0,
 		"protein": 0.0

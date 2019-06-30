@@ -32,8 +32,8 @@ public class RecipeFacade {
 		return recipeService.getAllRecipes();
 	}
 	
-	public Recipe getRecipeById(long id) {	
-		return recipeService.getRecipeById(id);
+	public Recipe getRecipeByUrlId(String urlId) {	
+		return recipeService.getRecipeByUrlId(urlId);
 	}
 	
 	public void addRecipe(RecipeRequest recipeRequest) {
@@ -47,18 +47,19 @@ public class RecipeFacade {
 	public Ingredient getIngredientById(long id) {	
 		return ingredientService.getIngredientById(id);
 	}
-	//create addIngredient
+	
 	private Recipe toRecipe(RecipeRequest recipeRequest) {
 		Recipe recipe = Recipe.builder()
-				.name((String) recipeRequest.getName())
-				.cookingTime((Long) recipeRequest.getCookingTime())
-				.prepTime((Long) recipeRequest.getPrepTime())
-				.portions((Long) recipeRequest.getPortions())
+				.name(recipeRequest.getName())
+				.cookingTime(recipeRequest.getCookingTime())
+				.urlId(recipeService.toSlug(recipeRequest.getName()))
+				.prepTime(recipeRequest.getPrepTime())
+				.portions(recipeRequest.getPortions())
 				.recipeIngredients(getIngredientsSet(recipeRequest.getRecipeIngredientsRequests()))
 				.instructions(getInstructionSet(recipeRequest.getInstructionRequests()))
 				.images(getImages(recipeRequest.getImageRequests()))
 				.macronutrients(recipeRequest.getMacronutrientsRequests().toMacroNutrients())
-				.additionalInfo((String) recipeRequest.getAdditionalInfo())
+				.additionalInfo(recipeRequest.getAdditionalInfo())
 				.build();
 		return recipe;
 	}

@@ -4,39 +4,71 @@
 	"cookingTime": 20,
 	"prepTime": 5,
 	"portions": 1,
-	"ingredients": [
+	"recipeIngredientsRequests": [
 		{
-			"name": "Mozzarela",
+			"ingredientRequest": {
+				"name":"mozzarella"
+			},
 			"quantity": 0.75,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 1
 		},
 		{
-			"name": "Almond flour",
+			"ingredientRequest": {
+				"name":"almond flour"
+			},
 			"quantity": 0.33,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 2
 		},
 		{
-			"name": "Large scrambled eggs",
+			"ingredientRequest": {
+				"name":"egg"
+			},
 			"quantity": 2.0,
-			"unit": "UNIT"
+			"unit": "UNIT",
+			"index": 3
 		},
 		{
-			"name": "Unsalted butter",
+			"ingredientRequest": {
+				"name": "unsalted butter"
+			},
 			"quantity": 2.0,
-			"unit": "TABLE_SPOON"
+			"unit": "TABLE_SPOON",
+			"index": 4
 		},
 		{
-			"name": "Cooked bacon",
+			"ingredientRequest": {
+				"name":"bacon"
+			},
 			"quantity": 3.0,
-			"unit": "SLICE"
+			"unit": "SLICE",
+			"index": 5
 		}
 	],
-	"instructions": "1)Melt mozzarela on microwave and mix it with almond flour\n2)Open the mixture\n3)Fill it with eggs and bacon\n4)Take it to the oven (400F) for 20 minutes\n\nNote: You can also try changing the fillings. I usually do it with cheese and turkey.",
-	"image": {
-		"id": 6,
+	"instructionRequests": [
+		{
+			"index":"1",
+			"step":" Melt mozzarela on microwave and mix it with almond flour"			
+		},
+		{
+			"index":"2",
+			"step":" Open the mixture"			
+		},
+		{
+			"index":"3",
+			"step":" Fill it with scrambled eggs and bacon"			
+		},
+		{
+			"index":"4",
+			"step":" Take it to the oven (400F) for 20 minutes"			
+		}
+	],
+	"note": "You can also try changing the fillings. I usually do it with cheese and turkey.",
+	"imageRequests": [{
 		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/hot_pocket.png"
-	},
-	"macronutrients": {
+	}],
+	"macronutrientsRequests": {
 		"carbs": 0.0,
 		"fat": 0.0,
 		"protein": 0.0

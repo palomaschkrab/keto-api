@@ -16,7 +16,8 @@ import lombok.Getter;
 
 @Getter
 public class RecipeResponse {
-	private long id;	
+	private long id;
+	private String urlId;
 	private String name;
 	private long cookingTime;
 	private long prepTime;
@@ -30,6 +31,7 @@ public class RecipeResponse {
 	
 	public RecipeResponse(Recipe recipe) {
 		id = recipe.getId();
+		urlId = recipe.getUrlId();
 		name = recipe.getName();
 		cookingTime = recipe.getCookingTime();
 		prepTime = recipe.getPrepTime();
@@ -66,4 +68,5 @@ public class RecipeResponse {
 	public String getFirstImageUrl(Set<Image> images) {
 		return images.iterator().next().getUrl();
 	}
+	
 }

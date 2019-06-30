@@ -32,18 +32,11 @@ public class RecipeController {
 		return RecipeConverter.convertRecipeToShortResponse(recipeFacade.getAllRecipes());
 	}
 	
-	@GetMapping("/{id}")
-	public RecipeResponse getRecipeById(@PathVariable long id){
-		logger.info("Getting recipe with id: " + id);
-		return RecipeConverter.convertRecipeToDisplayById(recipeFacade.getRecipeById(id));		
+	@GetMapping("/{urlId}")
+	public RecipeResponse getRecipeByUrlId(@PathVariable String urlId){
+		logger.info("Getting recipe with urlId: " + urlId);
+		return RecipeConverter.convertRecipeToDisplayByUrlId(recipeFacade.getRecipeByUrlId(urlId));		
 	}	
-	
-	
-//	public static void main(String[] args) {
-//		String string = "e'u qu~ero uma receita com hifen";
-//		String s2 = string.replaceAll(" /[^0-9a-zA-Z ]/", "" ).replace( " ", "-" );
-//		System.out.println(s2);
-//	}
 	
 	@PostMapping
 	public void addRecipe(@RequestBody RecipeRequest recipeRequest){

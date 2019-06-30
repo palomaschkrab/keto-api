@@ -6,7 +6,7 @@
 	"recipeIngredientsRequests": [
 		{
 			"ingredientRequest": {
-				"name":"Egg",
+				"name":"egg",
 				"amazonUrl": "test"
 			},
 			"quantity": 6.0,
@@ -15,7 +15,7 @@
 		},
 		{
 			"ingredientRequest": {
-				"name":"Mayonnaise",
+				"name":"mayonnaise",
 				"amazonUrl": "test"
 			},
 			"quantity": 0.25,
@@ -33,7 +33,7 @@
 		},
 		{
 			"ingredientRequest": {
-				"name": "Yellow mustard",
+				"name": "yellow mustard",
 				"amazonUrl": "test"
 			},
 			"quantity": 1.0,
@@ -42,7 +42,7 @@
 		},
 		{
 			"ingredientRequest": {
-				"name":  "Salt",
+				"name":  "salt",
 				"amazonUrl": "test"
 			},
 			"quantity": 0.125,
@@ -51,7 +51,7 @@
 		},
 		{
 			"ingredientRequest": {
-				"name": "Black pepper",
+				"name": "black pepper",
 				"amazonUrl": "test"
 			},
 			"quantity": 0.0,
@@ -60,7 +60,7 @@
 		},
 		{
 			"ingredientRequest": {
-				"name":  "Paprika",
+				"name":  "paprika",
 				"amazonUrl": "test"
 			},
 			"quantity": 0.0,
@@ -69,7 +69,7 @@
 		},
 		{
 			"ingredientRequest": {
-				"name":  "Onion",
+				"name":  "onion",
 				"amazonUrl": "test"
 			},
 			"quantity": 0,
@@ -78,7 +78,7 @@
 		},
 		{
 			"ingredientRequest": {
-				"name": "Parsley",
+				"name": "parsley",
 				"amazonUrl": "test"
 			},
 			"quantity": 0.0,
@@ -121,7 +121,7 @@
 	"note": "Add the ingredients with no predetermined amount as you like",
 	"imageRequests": [{
 		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/deviled_eggs.jpg",
-		"description": "Deviled Eggs"
+		"description": " Keto Deviled Eggs"
 	}],
 	"macronutrientsRequests": {
 		"carbs": 0.0,

@@ -1,45 +1,85 @@
 {
-	"id": 10,
 	"name": "Chicken Dip",
 	"cookingTime": 20,
 	"prepTime": 5,
 	"portions": 16,
-	"ingredients": [
+	"recipeIngredientsRequests": [
 		{
-			"name": "Cream cheese",
+			"ingredientRequest": {
+				"name": "cream cheese"
+			},
 			"quantity": 1.5,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 1
 		},
 		{
-			"name": "Sriracha Hot  chili sauce",
+			"ingredientRequest": {
+				"name":"Sriracha Hot chili sauce"
+			},
 			"quantity": 1.0,
 			"unit": "TABLE_SPOON"
+			,
+			"index": 2
 		},
 		{
-			"name": "Cooked and shredded chicken breast",
+			"ingredientRequest": {
+				"name": "shredded chicken breast"
+			},
 			"quantity": 3.0,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 3
 		},
 		{
-			"name": "Shredded mozzarella cheese, divided",
+			"ingredientRequest": {
+				"name": "shredded mozzarella"
+			},
 			"quantity": 1.0,
-			"unit": "CUP"
+			"unit": "CUP",
+			"index": 4
 		},
 		{
-			"name": "Heavy cream",
+			"ingredientRequest": {
+				"name": "heavy cream"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 5
 		}
 	],
-	"instructions": "1) Preheat oven to 350 F\n2) Put the cream cheese and hot sauce in a medium-sized saucepan over medium heat. As the cream cheese begins to melt, stir the cheese and hot sauce until combined\n3) Once the cream cheese is fully melted, add the chicken and stir to coat the chicken in the sauce. Turn off the heat and stir in 3/4 cup of the mozzarella cheese. Add heavy cream to make it easier to stir\n4) Transfer the mixture to an 8-inch round baking pan and layer the rest of the mozzarella.\n5) Bake for 10 minutes, until the cheese is melted and bubbling.\n6) Serve with celery sticks or Fathead Crackers",
-	"image": {
-		"id": 10,
-		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/ChickenDip.jpg"
-	},
-	"macronutrients": {
+	"instructionRequests":[
+		{
+			"index":"1",
+			"step":" Preheat oven to 350 F"			
+		},
+		{
+			"index":"2",
+			"step":" Put the cream cheese and hot sauce in a medium-sized saucepan over medium heat. As the cream cheese begins to melt, stir the cheese and hot sauce until combined"			
+		},
+		{
+			"index":"3",
+			"step":" Once the cream cheese is fully melted, add the chicken and stir to coat the chicken in the sauce. Turn off the heat and stir in 3/4 cup of the mozzarella cheese. Add heavy cream to make it easier to stir"			
+		},
+		{
+			"index":"4",
+			"step":" Transfer the mixture to an 8-inch round baking pan and layer the rest of the mozzarella."			
+		},
+		{
+			"index":"5",
+			"step":" Bake for 10 minutes, until the cheese is melted and bubbling."			
+		},
+		{
+			"index":"6",
+			"step":" Serve with celery sticks or Fathead Crackers"			
+		}
+	],
+	"imageRequests": [{
+		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/ChickenDip.jpg",
+		"description": "Chicken Dip"
+	}],
+	"macronutrientsRequests": {
 		"carbs": 0.0,
 		"fat": 0.0,
 		"protein": 0.0
 	},
-	"additionalInfo": "This is another version of the KetoConnect recipe because their recipe had lots of jalapeños. The dip is amazing! I mean, what could go wrong when you mix cream cheese, cheese and chicken, right?"
+	"additionalInfo": "This is another version of the KetoConnect recipe because their recipe was way to spicy for my taste. The dip is amazing! I mean, what could go wrong when you mix cream cheese, cheese and chicken, right?"
 }

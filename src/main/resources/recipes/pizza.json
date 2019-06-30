@@ -1,57 +1,114 @@
 {
-	"id": 7,
 	"name": "Pizza",
 	"cookingTime": 15,
 	"prepTime": 10,
 	"portions": 6,
-	"ingredients": [
+	"recipeIngredientsRequests": [
 		{
-			"name": "Muzzarela",
+			"ingredientRequest": {
+				"name":"mozzarella"
+			},
 			"quantity": 100.0,
-			"unit": "GRAM"
+			"unit": "GRAM",
+			"index": 1
 		},
 		{
-			"name": "Cream cheese",
+			"ingredientRequest": {
+				"name":"cream cheese"
+			},
 			"quantity": 1.0,
-			"unit": "TABLE_SPOON"
+			"unit": "TABLE_SPOON",
+			"index": 2
 		},
 		{
-			"name": "Salt",
+			"ingredientRequest": {
+				"name": "salt"
+			},
 			"quantity": 1.0,
-			"unit": "PINCH"
+			"unit": "PINCH",
+			"index": 3
 		},
 		{
-			"name": "Almond flour",
+			"ingredientRequest": {
+				"name": "almond flour"
+			},
 			"quantity": 50.0,
-			"unit": "GRAM"
+			"unit": "GRAM",
+			"index": 4
 		},
 		{
-			"name": "Egg",
+			"ingredientRequest": {
+				"name": "egg"
+			},
 			"quantity": 1.0,
-			"unit": "UNIT"
+			"unit": "UNIT",
+			"index": 5
 		},
 		{
-			"name": "Oregano",
+			"ingredientRequest": {
+				"name": "oregano"
+			},
 			"quantity": 0.0,
-			"unit": "NONE"
+			"unit": "NONE",
+			"index": 6
 		},
 		{
-			"name": "Psyllium rusk",
+			"ingredientRequest": {
+				"name": "Psyllium rusk"
+			},
 			"quantity": 1.0,
-			"unit": "TABLE_SPOON"
+			"unit": "TABLE_SPOON",
+			"index": 7
 		},
 		{
-			"name": "Yeast for bread",
+			"ingredientRequest": {
+				"name": "Yeast for bread"
+			},
 			"quantity": 1.0,
-			"unit": "TEA_SPOON"
+			"unit": "TEA_SPOON",
+			"index": 8
 		}
 	],
-	"instructions": "1) Microwave the muzzarela and the cream cheese for 1 minute\n2) Add and mix it salt and almond flour\n3) Add and mix the rest of the ingredients\n4) Roll out the dough between two sheets of parchment paper\n5) Poke the dough with a fork\n6) Bake it at 390F for 15 minutes\n7) Remove and flip the crust\n8) Add your favorite toppings\n\nNote 1: the macronutrients refer to the crust only\nNote 2: You can skip the Psyllium rusk if you do not have it but it is good to use because it makes the dough more workable and it is rich in fibers",
-	"image": {
-		"id": 7,
-		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/pizza.jpg"
-	},
-	"macronutrients": {
+	"instructionRequests":[
+		{
+			"index":"1",
+			"step":" Microwave the mozzarela and the cream cheese for 1 minute"			
+		}, 
+		{
+			"index":"2",
+			"step":" Add and mix it salt and almond flour"			
+		}, 
+		{
+			"index":"3",
+			"step":" Add and mix the rest of the ingredients"			
+		}, 
+		{
+			"index":"4",
+			"step":" Roll out the dough between two sheets of parchment paper"			
+		},
+		{
+			"index":"5",
+			"step":" Poke the dough with a fork"			
+		},
+		{
+			"index":"6",
+			"step":" Bake it at 390F for 15 minutes"			
+		},
+		{
+			"index":"7",
+			"step":" Remove and flip the crust"			
+		},
+		{
+			"index":"8",
+			"step":" Add your favorite toppings"			
+		}
+	],
+	"note": "the macronutrients refer to the crust only and you can skip the Psyllium rusk",
+	"imageRequests": [{
+		"url": "https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/pizza.jpg",
+		"description": "Keto Pizza"
+	}],
+	"macronutrientsRequests": {
 		"carbs": 15.0,
 		"fat": 57.0,
 		"protein": 38.0

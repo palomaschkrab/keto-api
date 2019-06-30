@@ -17,7 +17,7 @@ public class RecipeConverter {
 		return recipeShortInfoResponses;
 	}
 	
-	public static RecipeResponse convertRecipeToDisplayById(Recipe recipe) {
+	public static RecipeResponse convertRecipeToDisplayByUrlId(Recipe recipe) {
 		return new RecipeResponse(recipe);
 	}
 }
