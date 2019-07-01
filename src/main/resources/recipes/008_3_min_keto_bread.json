@@ -8,14 +8,18 @@
 			"ingredientRequest": {
 				"name":"almond flour"
 			},
-			"quantity": 3.0,
+			"whole": 3,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON",
 			"index": 1
 		},
 		{"ingredientRequest": {
 				"name":"Baking powder"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TEA_SPOON",
 			"index": 2
 		},
@@ -23,7 +27,9 @@
 			"ingredientRequest": {
 				"name":"olive oil"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON",
 			"index": 3
 		},
@@ -31,7 +37,9 @@
 			"ingredientRequest": {
 				"name":"egg"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT",
 			"index": 4
 		}

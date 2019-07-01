@@ -2,7 +2,6 @@ package com.howtoketocook.ketoapi.response;
 
 import com.howtoketocook.ketoapi.converter.IngredientUnitConverter;
 import com.howtoketocook.ketoapi.converter.QuantityConverter;
-import com.howtoketocook.ketoapi.model.Ingredient;
 import com.howtoketocook.ketoapi.model.RecipeIngredient;
 
 import lombok.Getter;
@@ -15,7 +14,7 @@ public class IngredientResponse {
 	
 	public IngredientResponse(RecipeIngredient ingredient) {
 		name = ingredient.getIngredient().getName();
-		quantity = QuantityConverter.converQuantitytToFraction(ingredient.getQuantity());
-		unit = IngredientUnitConverter.convertIngredientUnitToDisplay(ingredient.getUnit());
+		quantity = QuantityConverter.convertFractionToString(ingredient.getWhole(), ingredient.getNumerator(), ingredient.getDenominator());
+		unit = IngredientUnitConverter.convertIngredientUnitToDisplay(ingredient.getWhole(), ingredient.getUnit());
 	}
 }

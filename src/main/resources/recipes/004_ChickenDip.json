@@ -8,7 +8,9 @@
 			"ingredientRequest": {
 				"name": "cream cheese"
 			},
-			"quantity": 1.5,
+			"whole": 1,
+			"numerator": 1,
+			"denominator": 2,
 			"unit": "CUP",
 			"index": 1
 		},
@@ -16,7 +18,9 @@
 			"ingredientRequest": {
 				"name":"Sriracha Hot chili sauce"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON"
 			,
 			"index": 2
@@ -25,7 +29,9 @@
 			"ingredientRequest": {
 				"name": "shredded chicken breast"
 			},
-			"quantity": 3.0,
+			"whole": 3,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "CUP",
 			"index": 3
 		},
@@ -33,7 +39,9 @@
 			"ingredientRequest": {
 				"name": "shredded mozzarella"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "CUP",
 			"index": 4
 		},
@@ -41,7 +49,9 @@
 			"ingredientRequest": {
 				"name": "heavy cream"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 5
 		}

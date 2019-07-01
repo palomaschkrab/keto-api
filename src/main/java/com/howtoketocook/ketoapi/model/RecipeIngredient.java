@@ -29,7 +29,9 @@ public class RecipeIngredient {
 	private Long id;
 	@ManyToOne
 	private Ingredient ingredient;
-	private double quantity;
+	private int whole;
+	private int numerator;
+	private int denominator;
 	@Enumerated(EnumType.STRING)
 	private IngredientUnit unit;
 	private Long index;

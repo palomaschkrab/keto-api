@@ -8,7 +8,9 @@
 			"ingredientRequest": {
 				"name":"Beef Stew"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "KILOGRAM",
 			"index": 1
 		},
@@ -16,7 +18,9 @@
 			"ingredientRequest": {
 				"name":"red onion"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT",
 			"index": 2
 		},
@@ -24,7 +28,9 @@
 			"ingredientRequest": {
 				"name":"green pepper"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT",
 			"index": 3
 		},
@@ -32,7 +38,9 @@
 			"ingredientRequest": {
 				"name":"grape tomatoes"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 4
 		},
@@ -40,7 +48,9 @@
 			"ingredientRequest": {
 				"name":"soy sauce"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 5
 		},
@@ -48,7 +58,9 @@
 			"ingredientRequest": {
 				"name":"garlic"
 			},
-			"quantity": 3.0,
+			"whole": 3,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "CLOVE",
 			"index": 6
 		},
@@ -56,7 +68,9 @@
 			"ingredientRequest": {
 				"name":"salt"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 7
 		}		

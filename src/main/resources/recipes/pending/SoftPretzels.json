@@ -7,37 +7,52 @@
 	"ingredients": [
 		{
 			"name": "Blanched almond flour",
-			"quantity": 2.0,
+			"whole": 2,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "CUP"
 		},
 		{
 			"name": "Baking powder",
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TEA_SPOON"
 		},
 		{
 			"name": "Onion powder",
-			"quantity": 0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit": "TEA_SPOON"
 		},
 		{
 			"name": "Garlic powder",
-			"quantity": 0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit": "TEA_SPOON"
 		},
 		{
 			"name": "Shredded low misture mozzarella cheese",
-			"quantity": 3.0,
+			"whole": 3,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "CUP"
 		},
 		{
 			"name": "Cream cheese",
-			"quantity": 5.0,
+			"whole": 5,
+			"numerator": 0,
+			"denominator": 0,
+			
 			"unit": "TABLE_SPOON"
 		},
 		{
 			"name": "Large egg",
-			"quantity": 2.0,
+			"whole": 2,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT"
 		}
 	],

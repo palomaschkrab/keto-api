@@ -8,7 +8,9 @@
 			"ingredientRequest": {
 				"name":"chopped broccoli"
 			},
-			"quantity":8.0,
+			"whole": 8,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"CUP",
 			"index": 1
 		},
@@ -16,7 +18,9 @@
 			"ingredientRequest": {
 				"name":"cheddar (in cubes)"
 			},
-			"quantity":6.0,
+			"whole": 6,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"OUNCE",
 			"index": 2
 		},
@@ -24,7 +28,9 @@
 			"ingredientRequest": {
 				"name":"diced red onion"
 			},
-			"quantity":0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit":"CUP",
 			"index": 3
 		},
@@ -32,7 +38,9 @@
 			"ingredientRequest": {
 				"name":"thinly sliced almonds"
 			},
-			"quantity":0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit":"CUP",
 			"index": 4
 		},
@@ -40,7 +48,9 @@
 			"ingredientRequest": {
 				"name":"bacon (fried and crambled)"
 			},
-			"quantity":8.0,
+			"whole": 8,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"SLICE",
 			"index": 5
 		},
@@ -48,7 +58,9 @@
 			"ingredientRequest": {
 				"name":"mayonnaise"
 			},
-			"quantity":0.5,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 2,
 			"unit":"CUP",
 			"index": 6
 		},
@@ -56,7 +68,9 @@
 			"ingredientRequest": {
 				"name":"sour cream"
 			},
-			"quantity":0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit":"CUP",
 			"index": 7
 		},
@@ -64,7 +78,9 @@
 			"ingredientRequest": {
 				"name":"onion powder"
 			},
-			"quantity":2.0,
+			"whole": 2,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"TEA_SPOON",
 			"index": 8
 		},
@@ -72,7 +88,9 @@
 			"ingredientRequest": {
 				"name":"Wine vinegar"
 			},
-			"quantity":1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"TEA_SPOON",
 			"index": 9
 		}

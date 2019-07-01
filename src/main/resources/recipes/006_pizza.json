@@ -8,7 +8,9 @@
 			"ingredientRequest": {
 				"name":"mozzarella"
 			},
-			"quantity": 100.0,
+			"whole": 100,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "GRAM",
 			"index": 1
 		},
@@ -16,7 +18,9 @@
 			"ingredientRequest": {
 				"name":"cream cheese"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON",
 			"index": 2
 		},
@@ -24,7 +28,9 @@
 			"ingredientRequest": {
 				"name": "salt"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "PINCH",
 			"index": 3
 		},
@@ -32,7 +38,9 @@
 			"ingredientRequest": {
 				"name": "almond flour"
 			},
-			"quantity": 50.0,
+			"whole": 50,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "GRAM",
 			"index": 4
 		},
@@ -40,7 +48,9 @@
 			"ingredientRequest": {
 				"name": "egg"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT",
 			"index": 5
 		},
@@ -48,7 +58,9 @@
 			"ingredientRequest": {
 				"name": "oregano"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 6
 		},
@@ -56,7 +68,9 @@
 			"ingredientRequest": {
 				"name": "Psyllium rusk"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON",
 			"index": 7
 		},
@@ -64,7 +78,9 @@
 			"ingredientRequest": {
 				"name": "Yeast for bread"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TEA_SPOON",
 			"index": 8
 		}

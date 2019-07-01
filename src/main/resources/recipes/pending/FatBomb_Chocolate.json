@@ -8,7 +8,9 @@
 			"ingredientRequest": {
 				"name": "coconut oil"
 			},
-			"quantity": 0.5,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 2,
 			"unit": "CUP",
 			"index": 1
 		},
@@ -16,7 +18,9 @@
 			"ingredientRequest": {
 				"name": "peanut butter"
 			},
-			"quantity": 0.5,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 2,
 			"unit": "CUP",
 			"index": 2
 		},
@@ -24,7 +28,9 @@
 			"ingredientRequest": {
 				"name": "cocoa powder"
 			},
-			"quantity": 2.0,
+			"whole": 2,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON",
 			"index": 3
 		},
@@ -32,7 +38,9 @@
 			"ingredientRequest": {
 				"name": "sweetner"
 			},
-			"quantity": 3.0,
+			"whole": 3,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON",
 			"index": 4
 		},
@@ -40,7 +48,9 @@
 			"ingredientRequest": {
 				"name":"vanilla extract"
 			},
-			"quantity": 0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit": "TEA_SPOON",
 			"index": 5
 		}

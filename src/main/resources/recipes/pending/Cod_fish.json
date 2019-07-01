@@ -7,37 +7,51 @@
 	"ingredients":[
 		{
 			"name":"Cod fish",
-			"quantity":1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"KILOGRAM"
 		},
 		{
 			"name":"Onion",
-			"quantity":2.0,
+			"whole": 2,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"UNIT"
 		},
 		{	
 			"name":"Red pepper",
-			"quantity":1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"UNIT"
 		},
 		{
 			"name":"Yellow pepper",
-			"quantity":1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"UNIT"
 		},
 		{
 			"name":"Black olives",
-			"quantity":0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"NONE"
 		},
 		{
 			"name":"Eggs",
-			"quantity":4.0,
+			"whole": 4,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"UNIT"
 		},
 		{
 			"name":"Olive oil",
-			"quantity":250.0,
+			"whole": 250,
+			"numerator": 0,
+			"denominator": 0,
 			"unit":"MILLILITER"
 		}
 	],

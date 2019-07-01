@@ -8,7 +8,9 @@
 			"ingredientRequest": {
 				"name":"mozzarella"
 			},
-			"quantity": 1.5,
+			"whole": 1,
+			"numerator": 1,
+			"denominator": 2,
 			"unit": "CUP",
 			"index": 1
 		},
@@ -16,7 +18,9 @@
 			"ingredientRequest": {
 				"name":"Cream cheese"
 			},
-			"quantity": 0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit": "CUP",
 			"index": 2
 		},
@@ -24,7 +28,9 @@
 			"ingredientRequest": {
 				"name":"almond flour"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "CUP",
 			"index": 3
 		},
@@ -32,7 +38,9 @@
 			"ingredientRequest": {
 				"name":"Large egg"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT",
 			"index": 4
 		},
@@ -40,7 +48,9 @@
 			"ingredientRequest": {
 				"name": "dried parsley"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TEA_SPOON",
 			"index": 5
 		},
@@ -48,7 +58,9 @@
 			"ingredientRequest": {
 				"name":"Pink Himalayan salt"
 			},
-			"quantity": 0.5,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 2,
 			"unit": "TEA_SPOON",
 			"index": 6
 		}

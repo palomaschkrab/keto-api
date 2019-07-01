@@ -9,7 +9,9 @@
 			"ingredientRequest": {
 				"name":"mozzarella"
 			},
-			"quantity": 0.75,
+			"whole": 0,
+			"numerator": 3,
+			"denominator": 4,
 			"unit": "CUP",
 			"index": 1
 		},
@@ -17,7 +19,9 @@
 			"ingredientRequest": {
 				"name":"almond flour"
 			},
-			"quantity": 0.33,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 3,
 			"unit": "CUP",
 			"index": 2
 		},
@@ -25,7 +29,9 @@
 			"ingredientRequest": {
 				"name":"egg"
 			},
-			"quantity": 2.0,
+			"whole": 2,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT",
 			"index": 3
 		},
@@ -33,7 +39,9 @@
 			"ingredientRequest": {
 				"name": "unsalted butter"
 			},
-			"quantity": 2.0,
+			"whole": 2,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TABLE_SPOON",
 			"index": 4
 		},
@@ -41,7 +49,9 @@
 			"ingredientRequest": {
 				"name":"bacon"
 			},
-			"quantity": 3.0,
+			"whole": 3,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "SLICE",
 			"index": 5
 		}

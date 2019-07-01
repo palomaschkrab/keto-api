@@ -103,7 +103,9 @@ public class RecipeFacade {
 	private RecipeIngredient getRecipeIngredient(RecipeIngredientRequest recipeIngredientRequest) {
 		return RecipeIngredient.builder()
 				.ingredient(ingredientService.getIngredientByName(recipeIngredientRequest.getIngredientRequest().getName()))
-			.quantity(recipeIngredientRequest.getQuantity())
+			.whole(recipeIngredientRequest.getWhole())
+			.numerator(recipeIngredientRequest.getNumerator())
+			.denominator(recipeIngredientRequest.getDenominator())
 			.unit(recipeIngredientRequest.getUnit())
 			.index(recipeIngredientRequest.getIndex())
 			.build();		

@@ -9,7 +9,9 @@
 				"name":"egg",
 				"amazonUrl": "test"
 			},
-			"quantity": 6.0,
+			"whole": 6,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "UNIT",
 			"index": 1
 		},
@@ -18,7 +20,9 @@
 				"name":"mayonnaise",
 				"amazonUrl": "test"
 			},
-			"quantity": 0.25,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 4,
 			"unit": "CUP",
 			"index": 2
 		},
@@ -27,7 +31,9 @@
 				"name": "White vinegar",
 				"amazonUrl": "test"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TEA_SPOON",
 			"index": 3
 		},
@@ -36,7 +42,9 @@
 				"name": "yellow mustard",
 				"amazonUrl": "test"
 			},
-			"quantity": 1.0,
+			"whole": 1,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "TEA_SPOON",
 			"index": 4
 		},
@@ -45,7 +53,9 @@
 				"name":  "salt",
 				"amazonUrl": "test"
 			},
-			"quantity": 0.125,
+			"whole": 0,
+			"numerator": 1,
+			"denominator": 8,
 			"unit": "TEA_SPOON",
 			"index": 5
 		},
@@ -54,7 +64,9 @@
 				"name": "black pepper",
 				"amazonUrl": "test"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 6
 		},
@@ -63,7 +75,9 @@
 				"name":  "paprika",
 				"amazonUrl": "test"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 7
 		},
@@ -72,7 +86,9 @@
 				"name":  "onion",
 				"amazonUrl": "test"
 			},
-			"quantity": 0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 8
 		},
@@ -81,7 +97,9 @@
 				"name": "parsley",
 				"amazonUrl": "test"
 			},
-			"quantity": 0.0,
+			"whole": 0,
+			"numerator": 0,
+			"denominator": 0,
 			"unit": "NONE",
 			"index": 9
 		}
