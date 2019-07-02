@@ -8,20 +8,23 @@ import java.util.regex.Pattern;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.howtoketocook.ketoapi.model.Recipe;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@Transactional
+@RequiredArgsConstructor
 public class RecipeService {
 	private static Logger logger = LoggerFactory.getLogger(RecipeService.class);
 	private static final Pattern NONLATIN = Pattern.compile("[^\\w-]");
 	private static final Pattern WHITESPACE = Pattern.compile("[\\s]");
 
 	
-	@Autowired
-	private RecipeRepository recipeRepository;
+	private final RecipeRepository recipeRepository;
 
 	public List<Recipe> getAllRecipes() {
 		return recipeRepository.findAll();
