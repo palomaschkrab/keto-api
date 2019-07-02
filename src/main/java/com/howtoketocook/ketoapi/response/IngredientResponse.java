@@ -9,10 +9,12 @@ import lombok.Getter;
 @Getter
 public class IngredientResponse {
 	private String name;
+	private String amazonUrl;
 	private String quantity;
 	private String unit;
 	
 	public IngredientResponse(RecipeIngredient ingredient) {
+		amazonUrl = ingredient.getIngredient().getAmazonUrl();
 		name = ingredient.getIngredient().getName();
 		quantity = QuantityConverter.convertFractionToString(ingredient.getWhole(), ingredient.getNumerator(), ingredient.getDenominator());
 		unit = IngredientUnitConverter.convertIngredientUnitToDisplay(ingredient.getWhole(), ingredient.getUnit());
