@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.howtoketocook.ketoapi.model.Image;
 import com.howtoketocook.ketoapi.model.Ingredient;
@@ -17,16 +18,19 @@ import com.howtoketocook.ketoapi.request.InstructionRequest;
 import com.howtoketocook.ketoapi.request.RecipeIngredientRequest;
 import com.howtoketocook.ketoapi.request.RecipeRequest;
 import com.howtoketocook.ketoapi.service.ingredient.IngredientService;
+import com.howtoketocook.ketoapi.service.recipe.RecipeRepository;
 import com.howtoketocook.ketoapi.service.recipe.RecipeService;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@Transactional
+@RequiredArgsConstructor
 public class RecipeFacade {
 	
-	@Autowired
-	private IngredientService ingredientService;
+	private final IngredientService ingredientService;
 	
-	@Autowired
-	private RecipeService recipeService;
+	private final RecipeService recipeService;
 	
 	public List<Recipe> getAllRecipes() {
 		return recipeService.getAllRecipes();
