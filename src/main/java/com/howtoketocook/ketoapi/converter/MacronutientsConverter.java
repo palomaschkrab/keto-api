@@ -1,8 +1,5 @@
 package com.howtoketocook.ketoapi.converter;
 
-import com.howtoketocook.ketoapi.model.MacroNutrients;
-import com.howtoketocook.ketoapi.response.MacronutrientsResponse;
-
 public class MacronutientsConverter {
 	public static String convertToStringNotAvailable(double macro) {
 		String response; 

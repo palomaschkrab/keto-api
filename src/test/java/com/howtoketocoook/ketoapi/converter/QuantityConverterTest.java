@@ -17,7 +17,7 @@ public class QuantityConverterTest {
 	}
 	
 	@Test
-	public void test_quantity_converter_0_25() {
+	public void test_quantity_converter_1_4() {
 		String expectedResult = "1/4";
 		
 		String result = QuantityConverter.convertFractionToString(0, 1, 4);
@@ -25,7 +25,7 @@ public class QuantityConverterTest {
 	}
 	
 	@Test
-	public void test_quantity_converter_1_5() {
+	public void test_quantity_converter_1_1_5() {
 		String expectedResult = "1 1/2";
 		
 		String result = QuantityConverter.convertFractionToString(1, 1, 2);
@@ -47,5 +47,20 @@ public class QuantityConverterTest {
 		String result = QuantityConverter.convertFractionToString(0, 2, 5);
 		assertThat(result).isEqualTo(expectedResult);
 	}
+	
+	@Test
+	public void test_quantity_converter_0_0() {
+		String expectedResult = "";
+		
+		String result = QuantityConverter.convertFractionToString(0, 0, 0);
+		assertThat(result).isEqualTo(expectedResult);
+	}
 
+	@Test
+	public void test_quantity_converter_0_0_6() {
+		String expectedResult = "";
+		
+		String result = QuantityConverter.convertFractionToString(0, 0, 6);
+		assertThat(result).isEqualTo(expectedResult);
+	}
 }

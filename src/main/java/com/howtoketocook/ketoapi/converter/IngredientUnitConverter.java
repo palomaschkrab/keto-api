@@ -10,6 +10,8 @@ public class IngredientUnitConverter {
 			return "tbs of ";
 		}else if(ingredientUnit == IngredientUnit.TEA_SPOON) {
 			return "tsp of ";
+		}else if(ingredientUnit == IngredientUnit.PINCH && whole > 1) {
+			return ingredientUnit + "es of ";
 		}
 		
 		if(whole > 1) {
